@@ -21,7 +21,6 @@ namespace ThreeDPayment.Controllers
         public ActionResult Index(CreditCardModel model)
         {
             TempData["CreditCard"] = model;
-
             return RedirectToAction("ThreeDGate");
         }
 
